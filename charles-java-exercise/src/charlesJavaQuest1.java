@@ -1,4 +1,8 @@
 
+public class charlesJavaQuest1 {
+  
+
+
 /**
  * Expected Output:
  * 
@@ -16,7 +20,7 @@
  * The variable result is 3
  */
 // Primitive types and operators
-public class JavaQuest1 {
+
 
   public static void main(String[] args) {
 
