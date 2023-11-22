@@ -17,6 +17,7 @@ public class DemoChar {
 
     String isPassed = "p"; // or "F"
     char isPassed2 = 'P'; // or 'F'
-    boolean isPassed3 = true; // the best approach to describe pass or fail
+    boolean isPassed3 = true; // the best approach to describe pass or fail\
+  
   }
 }

@@ -1,4 +1,4 @@
-public class Demoint {
+public class DemoInt {
     public static void main(String[] args) {
         //"  " -> String
         // number
@@ -8,7 +8,8 @@ public class Demoint {
 
         // monthlySalary and i are both "variable" 變量
             int monthlySalary = 2000;
-        // If we do not use monthlySalary, VS shows underline    
+        // If we do not use monthlySalary, VS shows underline. But still can run the code
+
             int i = 4;
         // "int age" --> Declaration, int -> "integer"
         // age = 30 -> Assignment, assign the integer value 30 to the variable
@@ -38,8 +39,11 @@ public class Demoint {
 
             int num;
             num =10;
-            num = num + 2 - num; // 2
-            System.out.println(num);
+            //num = num + 2 - num--; // 2
+            System.out.print("num:");
+            System.out.println(num +2 - num--);
+            System.out.println(num + 2 - num--);
+            System.out.println("numnum:" + num);
             System.out.println(level); //4
 
             level = level + 1; 
@@ -60,7 +64,7 @@ public class Demoint {
             int result = 5 + 3 / 2 % 3;
             System.out.println("result=" + result);
 
-            float ans = 5 + 3 / 2f % 3;
+            float ans = ++result + 3 / 2f % 3;
             System.out.println("ans:" + ans);
 
             // There are 4 ways to store 整數
