@@ -152,8 +152,9 @@ public class DemoForLoop {
                 
                 //**if ( sum7 == 196)
                 int t1 = 0;
-                    if (sum7+(t1+2) <=200)
-                        if ((sum7+(t+(t1+2))>200))
+                if (sum7+(t1+2) <=200 && (sum7+(t+(t1+2))>200) )
+                    //**if (sum7+(t1+2) <=200)
+                       //** */ if ((sum7+(t+(t1+2))>200))
                System.out.println("t=" + t + ",sum" + sum7);
                 
             }
