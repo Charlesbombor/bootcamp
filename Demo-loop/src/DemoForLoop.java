@@ -144,13 +144,12 @@ public class DemoForLoop {
         int sum7 =0;
         int t=0;
         for ( t=0; t <101;t++){
-            if ( t%2==1){//( t%2==1){
+            if ( t%2==1){
                 sum7 +=t;
                 //System.out.println("t=" + t + ",sum" + sum7);
                if  (sum7 > 200)
                 break;
                 
-            
                 //**if ( sum7 == 196)
                 int t1 = 0;
                     if (sum7+(t1+2) <=200)
