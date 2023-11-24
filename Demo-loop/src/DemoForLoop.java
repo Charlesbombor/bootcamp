@@ -154,7 +154,7 @@ public class DemoForLoop {
                 int t1 = 0;
                 if (sum7+(t1+2) <=200 && (sum7+(t+(t1+2))>200) )
                     //**if (sum7+(t1+2) <=200)
-                       //** */ if ((sum7+(t+(t1+2))>200))
+                       //**  if ((sum7+(t+(t1+2))>200))
                System.out.println("t=" + t + ",sum" + sum7);
                 
             }
@@ -163,11 +163,28 @@ public class DemoForLoop {
     }
             //if (sum7<=200)
               // System.out.println("t=" + t + ",sum" + sum7);
+    String str = "abc pol ijk def xyz";
+    char target = 'f';
+    int n = 0;
+    boolean found = false;
+    for (n=0 ; n< str.length(); n++){ // charAt(i)
 
-        
+      if ( str.charAt(n)==target){
+        n=n+1;
+        found = true;
+        break;
+      }
+
+    }
+    if (found){
+
+        System.out.println("Found " + target + " at the " + n + "th character:"); 
+    } else {
+        System.out.println("Not found");
     }
 }
-    
+}
+
 
 
 
