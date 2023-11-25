@@ -1,13 +1,34 @@
 {
 	"folders": [
 		{
-			"path": "../bootcamp"
+			"path": "../bootcamp/charles-java-exercise"
 		},
 		{
 			"path": "../bc2311"
 		},
 		{
 			"path": "../bc2311-ex"
+		},
+		{
+			"path": "Demo-loop"
+		},
+		{
+			"path": "demo-operator"
+		},
+		{
+			"path": "demo-primitive"
+		},
+		{
+			"path": "Charles-Practicing"
+		},
+		{
+			"path": "demo-array"
+		},
+		{
+			"path": "demo-condition"
+		},
+		{
+			"path": "demo-helloworld"
 		}
 	],
 	"settings": {}
