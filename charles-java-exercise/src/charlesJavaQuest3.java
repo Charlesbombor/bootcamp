@@ -26,7 +26,7 @@ public class charlesJavaQuest3 {
     int month = input.nextInt();
 
     System.out.print("Input a year: ");
-    int year = input.nextInt();
+    int year = input.nextShort();
     input.close();
 
     // Complete the switch statement
@@ -104,8 +104,12 @@ public class charlesJavaQuest3 {
            number_Of_DaysInMonth = 31;
            break;
 
+           default:
+           System.out.println("Invalid month");
         // how about other months, December?
     }
+    if (month>0 && month<=1){
     System.out.print(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n");
+    }
   }
 }
