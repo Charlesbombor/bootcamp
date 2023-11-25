@@ -28,7 +28,7 @@ public class charlesJavaQuest4 {
         }
         if (j==10){
           System.out.println("*/");
-          break;
+          break; // end the for-loop earlier
         }
         
     }
@@ -37,7 +37,7 @@ public class charlesJavaQuest4 {
       j=0;
       for (int i=0; i <100;i++ ){
         if (i%2==1 || i<=0 || i%3!=0 || j>=10){
-         continue;
+         continue; // run the for-loop 100 times
         }
         System.out.println("*" + i); 
         j++;
