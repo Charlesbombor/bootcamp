@@ -23,19 +23,18 @@ public class DemointArry3 {
     int targetIndex =1;
     // for loop
     // expected result = {100,4,200,500,-20}
-    //int last=arr2[targetIndex];
-    //System.out.println("last is " + last);
+    
     temp=0;
     for (int x=targetIndex; x<=arr2.length-1; x++){
       
       
-      if (x<=arr2.length-2){
+      //if (x<=arr2.length-2){
       temp = arr2[x];
       arr2[x]=arr2[x+1];
       arr2[x+1] = temp;
-     }
+    // }
   }
-   //arr2[arr2.length-1]=last;
+   
     
     System.out.println("arr2 last index is " + arr2[arr2.length-1]);
     System.out.println("arr2 length is " + arr2.length);
