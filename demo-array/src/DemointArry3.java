@@ -19,11 +19,12 @@ public class DemointArry3 {
     System.out.println(Arrays.toString(arr));
 
     // move target index value to the tail of the array
-    int[]arr2 = new int[]{100,-20,4,100,500};
+    int[]arr2 = new int[]{100,-20,4,200,500};
     int targetIndex =1;
     // for loop
-    // expected result = {100,4,100,500,-20}
-    
+    // expected result = {100,4,200,500,-20}
+    //int last=arr2[targetIndex];
+    //System.out.println("last is " + last);
     temp=0;
     for (int x=targetIndex; x<=arr2.length-1; x++){
       
@@ -34,9 +35,9 @@ public class DemointArry3 {
       arr2[x+1] = temp;
      }
   }
-   // arr2[arr.length]=last;
+   //arr2[arr2.length-1]=last;
     
-    System.out.println("arr2 last index is " + arr2[arr.length]);
+    System.out.println("arr2 last index is " + arr2[arr2.length-1]);
     System.out.println("arr2 length is " + arr2.length);
 
     System.out.println(Arrays.toString(arr2));
