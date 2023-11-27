@@ -35,7 +35,30 @@ public class DemoInArray {
         arr = new int [10];
         System.out.println("arr[1] is " + arr[1]);
       // array supports for loop
-     
+    // default value of int[]
+    int[] arr5 =new int[3];
+    for ( int x=0; x<arr5.length; x++){
+      // arr5 is storing the address of the array object
+      // we use arr5[5] find out the 3 value stored in the array object
+      arr5[x]= x+1;
+      System.out.println(" arr5[X] " + arr5[x]);
+      // [0] -> 1
+      // [1] -> 2
+      // [2] -> 3
+      
+      for (int y=arr5.length-1; y>=0; y--){
+        
+        System.out.print(arr5[y]); // "3 2 1"
+        if (y>0){
+          System.out.print(" ");
+        }
+      }
+
+
+      String str= "hello"; // str is storing the address of String object hello
+      String str2= new String("hello"); // str2 is storing the address of String object hello
+      String str3= String.valueOf("hello");
+    }
     }
 }
 
