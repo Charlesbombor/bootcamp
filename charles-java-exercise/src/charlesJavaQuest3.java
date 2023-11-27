@@ -35,6 +35,7 @@ public class charlesJavaQuest3 {
         MonthOfName = "January";
         // Code here
         number_Of_DaysInMonth = 31;
+        System.out.println("*");
         break;
     
       case 2:
