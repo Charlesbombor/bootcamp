@@ -12,9 +12,7 @@ public class DemointArry3 {
       temp=arr[x];
       arr[x]=arr[x+1];
       arr[x+1]=temp;
-
       }
-
     }
     System.out.println(Arrays.toString(arr));
 
@@ -23,22 +21,18 @@ public class DemointArry3 {
     int targetIndex =1;
     // for loop
     // expected result = {100,4,200,500,-20}
-    
     temp=0;
-    for (int x=targetIndex; x<=arr2.length-1; x++){
-      
-      
-      //if (x<=arr2.length-2){
+    for (int x=targetIndex; x<arr2.length; x++){
+      if (x<=arr2.length-2){   // make the index not out of bound 5
       temp = arr2[x];
       arr2[x]=arr2[x+1];
       arr2[x+1] = temp;
-    // }
+     }
   }
    
     
     System.out.println("arr2 last index is " + arr2[arr2.length-1]);
     System.out.println("arr2 length is " + arr2.length);
-
     System.out.println(Arrays.toString(arr2));
   }
 }
