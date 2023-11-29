@@ -36,25 +36,75 @@ public class DemointArry3 {
     System.out.println("arr2 length is " + arr2.length);
     System.out.println(Arrays.toString(arr2));
 
-    temp =0;
-    int[] arr3 = new int[] {100, -20, 100, 400, 4};
-    Scanner input = new Scanner(System.in);
-    System.out
-        .println("Input whats your target index , index must be smaller then "
-            + arr2.length + " : ");
-    targetIndex = input.nextInt();
+    //temp =0;
+   // int[] arr3 = new int[] {100, -20, 100, 400, 4};
+    //Scanner input = new Scanner(System.in);
+    //System.out
+     //   .println("Input whats your target index , index must be smaller then "
+    //        + arr2.length + " : ");
+   // targetIndex = input.nextInt();
 
-    if (targetIndex >= 0 && targetIndex < arr3.length) {
-      temp = arr3[targetIndex];
+   // if (targetIndex >= 0 && targetIndex < arr3.length) {
+    //  temp = arr3[targetIndex];
 
-      for (int i = targetIndex; i < arr3.length - 1; i++) {
+     // for (int i = targetIndex; i < arr3.length - 1; i++) {
         
-        arr3[i] = arr3[i + 1];
+     //   arr3[i] = arr3[i + 1];
+    //  }
+
+    //  arr3[arr3.length - 1] = temp;
+   // }
+
+    //System.out.println("arr3: " + Arrays.toString(arr3));
+
+
+    // Find Max value, and move to the tail
+    int[]arr4=new int[]{100,4,1050,500,-20};
+    int max=0;
+    int i=0;
+    int j=0;
+    int maxindex=0;
+    for (i=0; i<arr4.length; i++){
+      if (arr4[i] > max){
+        max=arr4[i];
+        maxindex=i;
       }
-
-      arr3[arr3.length - 1] = temp;
     }
+    System.out.println("Max value located at arr " + maxindex);
+    for (j=maxindex; j<arr4.length-1; j++){
+      temp = arr4[j];
+      arr4[j]=arr4[j+1];
+      arr4[j+1]=temp;
 
-    System.out.println("arr3: " + Arrays.toString(arr3));
+    }
+    //arr4[arr4.length-1]=max;
+    System.out.println("Max is " + max);
+    System.out.println("arr4 " + Arrays.toString(arr4));
+
+    int min=Integer.MIN_VALUE;
+    System.out.println(min);
+    
+
+    int[]arr5=new int[]{100, 4, 1050, 500, -20};
+    int temp1=0;
+    for (j=0; j<arr5.length-1; j++){
+     // if (arr5[j+1]<arr5[j]){
+        //temp1=arr5[j+1];
+        //arr5[j+1]=arr5[j];
+       // arr5[j]=temp1;
+
+     // }
+   // }
+   // System.out.println("arr5a " + Arrays.toString(arr5));
+   for (i=0; i<arr5.length-j-1; i++){
+     if (arr5[i]>arr5[i+1]){
+       temp=arr5[i];
+       arr5[i]=arr5[i+1];
+       arr5[i+1]=temp;
+      }
+    }
+  }
+ // }
+      System.out.println("arr5 " + Arrays.toString(arr5));
   }
 }
