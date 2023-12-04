@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Practing_sorting {
+public class Practicing_sorting {
   public static void main(String[] args) {
     
   

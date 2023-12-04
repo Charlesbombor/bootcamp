@@ -1,4 +1,4 @@
-public class Practing_boolean {
+public class Practicing_boolean {
   public static void main(String[] args) {
 
     int i=0;

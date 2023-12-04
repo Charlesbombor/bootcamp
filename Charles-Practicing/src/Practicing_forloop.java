@@ -1,4 +1,4 @@
-public class Practing_forloop {
+public class Practicing_forloop {
     //0-100
     //i) 0-50, odd -> sum1
     //ii) 51 - 100, even -> another sum2

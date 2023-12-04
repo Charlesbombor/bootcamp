@@ -1,6 +1,6 @@
 public class charlesPractic {
   public static void main(String[] args) {
-    
+    String ();
 int x = 0;
 x += 1; // same as x = x+1;
 System.out.println("x +=1 make x become " + x); // 1

@@ -34,6 +34,7 @@ public class Person {
     p1.setName("John");
     Person p2 = new Person();
     p2.setName("Peter");
+    
     Person p3 = p1;
     p3.setName("Mary");
    // Person p2 = new Person("Mary",10);
