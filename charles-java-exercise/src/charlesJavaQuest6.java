@@ -16,8 +16,7 @@ public class charlesJavaQuest6 {
     for (i=0; i<=14; i++){
     if (i==0){
       f[i] = j;
-    }else
-    {
+    }else{
       f[i] = k+j;
       j = f[i];
       k = f[i-1];

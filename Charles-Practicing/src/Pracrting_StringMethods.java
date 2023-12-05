@@ -29,7 +29,7 @@ public class Pracrting_StringMethods {
     System.out.println(strisBlank);
 
     System.out.println(str.substring(3));
-    System.out.println(str.substring(3,5));
+    System.out.println("*" + str.substring(3,5));
 
     System.out.println(str4.toLowerCase());
     System.out.println(str.toUpperCase());
@@ -55,11 +55,14 @@ public class Pracrting_StringMethods {
     System.out.println(strequals);
     
     System.out.println(str.indexOf(5));
-    System.out.println(str.indexOf('k'));
+    System.out.println("*" + str.indexOf('z'));
     System.out.println(str6.indexOf("you"));
 
     System.out.println(str6.concat(str7));
     System.out.println(str.compareTo(str8));
+
+    //ArraytoChar
+    //.Split()
 
   }
 }
