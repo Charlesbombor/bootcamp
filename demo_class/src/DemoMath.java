@@ -15,11 +15,11 @@ public class DemoMath {
     System.out.println(Math.abs(-3.2));
 
     // ceil(), floor(), round()
-    System.out.println(Math.ceil(3.1));
+    System.out.println("ceil: " + Math.ceil(3.1));
     System.out.println(Math.ceil(3.9));
 
     System.out.println(Math.floor(3.1));
-    System.out.println(Math.floor(3.9));
+    System.out.println("**"+Math.floor(3.9));
 
     System.out.println(Math.round(14.4));
     System.out.println(Math.round(14.5));
