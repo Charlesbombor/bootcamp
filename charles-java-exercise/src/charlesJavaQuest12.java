@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Case 1: [2,7,11,15] Target: 9 Ans: [0, 1] or [1, 0]
  * 
@@ -18,20 +21,37 @@ public class charlesJavaQuest12 {
 
   // Do not change anything in main method
   public static void main(String[] args) {
-    int[] answers = twoSum(new int[] { 2, 7, 11, 15 }, 9); // {2, 7, 11, 15} is the dataset, 9 is the target to sum
-    int[] answers2 = twoSum(new int[] { 3, 2, 4 }, 6); // {3, 2, 4} is the dataset, 6 is the target to sum
-    int[] answers3 = twoSum(new int[] { 3, 3 }, 7); // {3, 3} is the dataset, 7 is the target to sum
-    Arrays.toString()
+    int[] answers = twoSum(new int[] {2, 7, 11, 15}, 9); // {2, 7, 11, 15} is the dataset, 9 is the target to sum
+    int[] answers2 = twoSum(new int[] {3, 2, 4}, 6); // {3, 2, 4} is the dataset, 6 is the target to sum
+    int[] answers3 = twoSum(new int[] {3, 3}, 7); // {3, 3} is the dataset, 7 is the target to sum
+    System.out.println(Arrays.toString(answers));
+    System.out.println(Arrays.toString(answers2));
+    System.out.println(Arrays.toString(answers3));
   }
 
   // Code a method here to return an array of two numbers that sum up to the
   // target
 public static int [] twoSum (int[] dataset, int target){
-System.out.println(dataset[0]);
-
-  int[] a = new int[2];
-  return a;
-}
+  int[] answer = new int[2];
+  int dL = dataset.length;
+  int i =0;
+  int j =0;
   
-
+   for (i=0; i<dL; i++){
+      for ( j = 1; j < dL-1; j++){
+        if (dataset[i] + dataset[j] == target){
+          answer[0]=dataset[i];
+          answer[1]=dataset[j];
+          break;
+        } 
+        }
+      } 
+     if (answer[0] == 0 && answer[1] == 0){
+          answer[0] = -1;
+          answer[1] = -1;
+     }
+      return answer;
+   }
 }
+
+
