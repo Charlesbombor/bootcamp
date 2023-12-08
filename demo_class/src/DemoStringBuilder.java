@@ -60,6 +60,7 @@ public class DemoStringBuilder {
 
       sb3.isEmpty();
       sb3.length();
+      
 
       StringBuilder s1 = new StringBuilder("abc");
       StringBuilder s2 = new StringBuilder("abc");

@@ -1,5 +1,7 @@
 package demo_class.src;
 
+import java.math.BigDecimal;
+
 public class Circle {
   private double radius;
 
@@ -44,7 +46,13 @@ public class Circle {
     System.out.println(circle1.diameter());
     // Pass by reference
     circle1 = circle2;
-
+ 
+  }
+    // Static Method - Tool
+    public static double area (double radius){
+      return BigDecimal.valueOf(radius).multiply(BigDecimal.valueOf(radius))
+            .multiply(BigDecimal.valueOf(Math.PI)).doubleValue();
+    }
 
   }
-}
+
