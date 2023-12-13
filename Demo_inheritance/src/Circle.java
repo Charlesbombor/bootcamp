@@ -8,6 +8,10 @@ public class Circle extends Shape {
     // super(); // calling shape()
   }
 
+  public Circle (double radius){
+    this.radius = radius;
+  }
+
   public Circle (double radius, String color){
     // super(); // calling shape()
     super(color);  // inherit the color of superClass which is in .getColor method
@@ -35,5 +39,6 @@ public class Circle extends Shape {
 
     System.out.println(c1.area());
     Circle c2 = new Circle(3.0, "yellow");
+    System.out.println(c2.area());
     }
 }

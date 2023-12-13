@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 public abstract class Shape {  
   // abstract class vs class 
@@ -35,6 +36,7 @@ public abstract class Shape {
     BigDecimal total = BigDecimal.valueOf(0);
     for(Shape shape : shapes) {
       total = total.add(BigDecimal.valueOf(shape.area()));
+      // shape.area() -> runtime -> which object (circle / square) -> different implementation of area()
     } 
   return total.doubleValue();
 }
@@ -65,9 +67,16 @@ public abstract class Shape {
 
     Shape[] shapes = new Shape[]{c1,s2,s3};
     System.out.println("Total Area " + totalArea(shapes));
+
+    Shape [] shapes2 = new Shape[]{new Circle(4.2), new Square(9)};
+   
+    System.out.println(totalArea(shapes2));
     
-
-
+Circle cTest = new Circle(4.2);
+Square sTest = new Square(9);
+System.out.println(cTest.area());
+System.out.println(sTest.area());
+System.out.println(cTest.getRadius());
 
     
   }

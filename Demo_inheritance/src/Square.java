@@ -8,6 +8,10 @@ public class Square extends Shape{
 
   }
 
+  public Square(int length){
+    this.length = length;
+  }
+
   public Square (double length, String color){
     this.length = length;
     this.color = color;
@@ -19,7 +23,7 @@ public class Square extends Shape{
 
   @Override
   public double area (){
-    return (BigDecimal.valueOf(this.length).multiply(BigDecimal.valueOf(this.length))).doubleValue();
+    return Math.pow(this.length, 2);
   }
 
   public static void main(String[] args) {
