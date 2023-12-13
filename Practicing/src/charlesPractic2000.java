@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class charlesPractic2000 {
+public class charles2000 {
   public static void main(String[] args) {
     
   

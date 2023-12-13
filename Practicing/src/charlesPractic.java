@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class charlesPractic {
+public class charles {
   public static void main(String[] args) {
     
     int num = 99;

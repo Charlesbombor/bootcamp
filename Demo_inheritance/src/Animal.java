@@ -1,6 +1,10 @@
-public class Animal {
+public class Animal {  // "Animal" is an abstract word
 
   private int age;
+
+  public Animal(){
+    
+  }
 
   public Animal (int age){
     

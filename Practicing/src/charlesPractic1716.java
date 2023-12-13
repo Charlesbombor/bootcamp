@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class charlesPractic1716 {
+public class charles1716 {
   public static void main(String[] args) { 
   
   int  n = 26; // days of saving

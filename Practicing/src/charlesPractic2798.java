@@ -1,4 +1,4 @@
-public class charlesPractic2798 {
+public class charles2798 {
   public static void main(String[] args) {
     
     int target = 2;

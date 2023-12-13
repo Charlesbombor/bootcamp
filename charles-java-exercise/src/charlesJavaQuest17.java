@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class charlesJavaQuest17 {
   /*
  * 
@@ -28,6 +30,29 @@ public class charlesJavaQuest17 {
   // finish the code
   // Hints : int -> String -> array
   public static int minimum35Number(int num) {
+    String digit;
+    int i;
+    int counter=0;
+    digit = String.valueOf(num);
+   
+    char [] number = new char[digit.length()];
+    for (i=0; i<digit.length(); i++){
+      number[i] = digit.charAt(i);
+    }
+    
+    for (i=0; i<digit.length(); i++){
+      if (number[i] == '5' && counter < 2){
+        number[i] = '3';
+        counter++;
+      }
+    }
+    digit = "";
+    for (i=0; i<number.length; i++){
+    digit += String.valueOf(number[i]);
+  }
+   
+    num = (int)Integer.valueOf(digit);
+    return num;
 
   }
 }
