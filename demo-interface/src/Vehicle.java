@@ -17,6 +17,12 @@ public interface  Vehicle { // "Vehicle" is an abstract Word
   
   void brake();
 
+  // After Java 8
+  // default instrance method
+  default boolean test(){
+    return false;
+  }
+
   public static void main(String[] args) {
     // x --> static?
     System.out.println(Vehicle.x); // 10, interface --> static final

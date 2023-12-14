@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StringQueue implements Addable, Pollable{
   private String [] queue;
   private String s;
@@ -64,7 +66,7 @@ public class StringQueue implements Addable, Pollable{
     sq.add("ABC");
     System.out.println(sq.peak());
     System.out.println(sq.pollHead()); // hello
-    System.out.println(sq);
+   
     System.out.println(sq.isEmpty());
 
     

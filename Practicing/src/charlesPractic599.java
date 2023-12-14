@@ -12,55 +12,90 @@ public class charlesPractic599 {
 public String[] findRestaurant(String[] list1, String[] list2) {
         
         String[] newList1 = new String[list1.length];
-        String[] newList2 = new String[list2.length];
-        String[] singleList = new String[newList1.length];
+        
        
         int i;
         int j;
-        int k;
+      
         int m;
-        int n;
+       
         int x = 0;
-        int y = 0;
-        int z = 0;
+        String temp;
+        int temp2 = 0;
         int counter = 0;
+
+
         
 
          for (i=0; i< list1.length; i++){
             for(j=0; j< list2.length; j++){
-                if(list1[i].length() == list2[j].length()){
-                    newList1[x] = list1[i];
-                    x++;
-                    newList2[y] = list2[j];
-                    y++;
+                if(list1[i].equals( list2[j])){
+                    newList1[x++] = list1[i];
+                    
+                    
                 }
             }
          }
-        // System.out.println(Arrays.toString(newList1));
-       //  System.out.println(Arrays.toString(newList2));
-         for (k=0; k < newList1.length-1; k++){
-            if (newList1[k] == (newList2[k])) {
-                singleList[z] = newList1[k];
-                z++;
-            }
-         }
-
-     //    System.out.println(Arrays.toString(singleList));
-            for (m=0; m < singleList.length-1; m++){
-            if (singleList[m] != null){
+          System.out.println(Arrays.toString(newList1));
+         System.out.println(newList1.length);
+       counter = 0;
+         for (m=0; m < newList1.length; m++){
+            if (newList1[m] != null){
+                 System.out.println(m +" " +counter);
                 counter++;
+                System.out.println(m +"*" +counter);
             }
           }
-
-          String[] finalList = new String[counter];
-
-          for(n=0; n < counter; n++){
-            finalList[n] = singleList[n];
-          }
          
-        // System.out.println(Arrays.toString(finalList));
+         String[] finalList = new String[counter];
+
+         for (m=0; m < finalList.length; m++){
+            if (newList1[m] != null){
+                finalList[m] = newList1[m];
+                
+            }
+        }
+       
+        System.out.println(finalList.length);
+        int [] sum = new int[finalList.length];
+           for(i=0; i<finalList.length; i++){
+            for (j=0; j<list1.length; j++){
+                if(finalList[i].equals(list1[j]))
+                sum[i] += j;
+            }
+        }
+                
+                for(i=0; i<finalList.length; i++){
+            for (j=0; j<list2.length; j++){
+               if(finalList[i].equals(list2[j]))
+               sum[i] += j;
+           }
+           }
+           System.out.println(sum.length);
+           for(m=sum.length-1; m>0; m--){
+            if(sum[m] < sum[m-1]){
+                temp = finalList[m];
+                temp2= sum[m];
+                finalList[m] = finalList[m-1];
+                sum[m] = sum[m-1];
+                finalList[m-1] = temp;
+                sum[m-1] = temp2;
+            }
+           }
+
+         System.out.println(Arrays.toString(sum));
          
-         return finalList;
+         counter = 0;
+         for (i=1; i<sum.length; i++){
+            if(sum[0] == sum[i])
+            counter++;
+         }
+         System.out.println(counter);
+
+         String []ans = new String[counter+1];
+         for(j=0; j<ans.length; j++)
+         ans[j]=finalList[j];
+         return ans;
         }
 
 
@@ -68,7 +103,7 @@ public String[] findRestaurant(String[] list1, String[] list2) {
 
         
         String [] list1 = new String[]{"Shogun","Tapioca Express","Burger King","KFC"};
-        String [] list2 = new String[]{"Piatti","The Grill at Torrey Pines","Hungry Hunter Steakhouse","Shogun"};
+        String [] list2 = new String[]{"KFC","Burger King","Tapioca Express","Shogun"};
         charlesPractic599 people = new charlesPractic599();
      System.out.println( Arrays.toString(people.findRestaurant(list1, list2)));
 
