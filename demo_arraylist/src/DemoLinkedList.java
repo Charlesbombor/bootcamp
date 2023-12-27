@@ -1,0 +1,19 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public class DemoLinkedList {
+  
+public static void main(String[] args) {
+  LinkedList<String> ls = new LinkedList<>();
+  ls.add("ABC");
+  ls.add("XYZ");
+  ls.add("IJK");
+  System.out.println(ls);
+  ls.remove(2); // remove by index, much slower that arraylist.remove(index)
+  System.out.println(ls);
+  ls.removeLast();
+  System.out.println(ls);
+  // for-each, contains, isEmpty()
+
+}
+}

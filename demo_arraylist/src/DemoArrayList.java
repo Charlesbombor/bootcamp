@@ -53,5 +53,27 @@ public class DemoArrayList {
     strings2.remove(0);
     System.out.println(strings2); // []
 
+    if (strings.contains("DDD")){
+      System.out.println("contain DDD");
+    }
+    
+    if (!strings.isEmpty()){
+      strings.add("AAA");
+    }
+
+    //
+    List<String>arrlist1 = new ArrayList<>(List.of("John", "Mary", "Peter"));
+    List<String>arrlist2 = List.of("John", "Mary", "Peter");
+
+    arrlist1.add("Sally"); // ok
+    arrlist1.remove("Mary");  // ok
+    arrlist1.set(1, "Jenny");
+
+    //arrlist2.add("Sally"); // 
+    //arrlist2.set(1,"Jenny");
+ 
+    List<String> ls = new ArrayList<>(100); // capacity (array length)
+    System.out.println(ls.size()); // size = 0 (how many elements)
+
   }
 }
