@@ -13,7 +13,7 @@ public class DemoFunction {
     // y = x+3
 
     // R apply (T t), R -> Integer, T -> String
-    Function<String, Integer> stringLength = str -> {
+    Function<String, Integer> stringLength = str -> {    // Function new a object without class
       return str.length(); // return Integer object
     };
     System.out.println(stringLength.apply("hello")); // 5
@@ -21,8 +21,8 @@ public class DemoFunction {
   
 
   // 
-  Function<String, String> concatHello = s1 -> s1.concat("hello");
-  concatHello.apply("abc"); // abchello
+  Function<String, String> concatHello = s1 -> s1.concat("hello");  // Function variable, left hand-side is input
+  concatHello.apply("abc"); // abchello                                right hand-side is output
     
   // R apply(T t, U u);
   BiFunction<List<String>, Integer, String> getByIndex = (strings, index) -> {
@@ -61,5 +61,7 @@ public class DemoFunction {
   // public static String getByIndex(List<String> strings, Integer index) {
   //   return strings.get(index);
   // }
+
+  // We use Lambda because we need to use method in liabary with Lambda format
 }
 }
