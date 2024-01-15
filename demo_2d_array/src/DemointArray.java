@@ -1,5 +1,7 @@
 package demo_2d_array.src;
 
+import java.util.Arrays;
+
 public class DemointArray {
   
   public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class DemointArray {
 
     // 2D array (row x column)
     int[][] array = new int[][]{{2,4,100}, {9,2,1000}};
+    System.out.println(Arrays.toString(array[0]));
+    int leng = array[0].length;
+    System.out.println(leng);
 
     for (int row = 0; row <array.length; row++){
       for (int col = 0; col < array[0].length; col++){

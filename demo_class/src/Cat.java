@@ -1,5 +1,7 @@
 package demo_class.src;
 
+import java.util.stream.Stream;
+
 public class Cat {
   private String name;
   private int age;
@@ -43,6 +45,18 @@ public class Cat {
       System.out.println(sum(1,2,3,4,5));
       int []arr = new int[]{1,2,3,4,5};
       System.out.println(sum2(arr));
+    }
+
+    public static Stream<String> stream() {
+      return null;
+    }
+
+    public String getName() {
+      return null;
+    }
+
+    public int getAge() {
+      return 0;
     }
 
 }

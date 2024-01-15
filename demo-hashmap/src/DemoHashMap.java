@@ -8,6 +8,8 @@ public class DemoHashMap {
 public static void main(String[] args) {
   
   List<String> strings = new ArrayList<>();
+  int index = 0;
+  String str = "";
 
   // Map: 
   // 1. key value pair -> <key, value>
@@ -18,6 +20,8 @@ public static void main(String[] args) {
   ageBook.put("John", 20);
   ageBook.put("John", 13); // Update 20 -> 13, because "John" is the key which exists in the map
   ageBook.put("Mary", 3); // add a new entry
+
+ 
 
   System.out.println(ageBook.size()); // 2
 
@@ -34,10 +38,14 @@ public static void main(String[] args) {
   lifeBook.put(23, "Faye");
   lifeBook.put(34, "HChi");
 
+   str = lifeBook.get(12).concat(lifeBook.get(23));
+  System.out.println("String: " + str);
+
   System.out.println(lifeBook.size());
   for (Map.Entry<Integer, String> input : lifeBook.entrySet()){
     System.out.println(input.getKey() + " " + input.getValue());
   }
+  
 
   System.out.println(lifeBook.get(12));
 
